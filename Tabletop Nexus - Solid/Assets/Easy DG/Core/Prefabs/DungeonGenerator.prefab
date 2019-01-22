@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1622041513761336}
+  m_IsPrefabParent: 1
+--- !u!1 &1622041513761336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4383419298252998}
+  - component: {fileID: 114910351580639136}
+  m_Layer: 0
+  m_Name: DungeonGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4383419298252998
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1622041513761336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114910351580639136
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1622041513761336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e741153f5d7854483f8e951cf81de5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dungeonName: Dungeon -
+  tilePrefab: {fileID: 0}
+  wallPrefabs:
+  - {fileID: 0}
+  doorPrefabs:
+  - {fileID: 0}
+  cornerPrefabs:
+  - {fileID: 0}
+  totalLines: 0
+  maxTilesPerLine: 0
+  boundariesOn: 0
+  boundsX: 0
+  boundsZ: 0
+  terminateAtBounds: 0
+  changeDirChance: 0
+  doorSpawnChance: 0
+  roomSpawnChance: 0
+  deleteDungeonOnNew: 0
+  allowParallelLinesToTouch: 0
+  generateContinuous: 0
+  generateRooms: 0
+  generateWalls: 0
+  generateCorners: 0
+  onlySpawnDoorsAtHallEnds: 0
+  minRoomLength: 0
+  maxRoomLength: 0
+  minRoomWidth: 0
+  maxRoomWidth: 0
+  roomMinDistanceEndOfLine: 0
+  roomMinDistanceFromLast: 0
+  manualModeTemplatePrefab: {fileID: 0}
+  defaultTemplatePosX: 0
+  defaultTemplatePosZ: 0
+  manualModeOn: 0
+  tileSize: 0
+  tileHeight: 0
+  allWalls: []
+  allDoors: []
+  allCorners: []
+  clearTileList: 1
+  dungeonParent: {fileID: 0}
+  dungeonsSpawned: 0
+  currentTemplates: []

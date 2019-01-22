@@ -1,0 +1,602 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF3E6A5B-3B58-E0E2-D094-271C5DDE3000}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>GamePlugins:3</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>2017.3.1f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_1;UNITY_2017_3;UNITY_2017;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;DEVELOPMENT_BUILD;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE;CROSS_PLATFORM_INPUT;MOBILE_INPUT;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_3_1;UNITY_2017_3;UNITY_2017;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;DEVELOPMENT_BUILD;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE;CROSS_PLATFORM_INPUT;MOBILE_INPUT;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WebModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.WebModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>Library\UnityAssemblies\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Vuforia.UnityExtensions.Editor">
+      <HintPath>Library\UnityAssemblies\Vuforia.UnityExtensions.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Vuforia.UnityExtensions">
+      <HintPath>Library\UnityAssemblies\Vuforia.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>Library\UnityAssemblies\UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>Library\UnityAssemblies\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Timeline">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIAutomation">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIAutomation">
+      <HintPath>Library\UnityAssemblies\UnityEditor.UIAutomation.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GoogleAudioSpatializer">
+      <HintPath>Library\UnityAssemblies\UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>Library\UnityAssemblies\UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.HoloLens">
+      <HintPath>Library\UnityAssemblies\UnityEditor.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>Library\UnityAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>Library\UnityAssemblies\UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Purchasing">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>Library\UnityAssemblies\UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Assets\Photon Unity Networking\Editor\PhotonNetwork\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>Assets\Plugins\Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>Assets\Plugins\WebSocket\websocket-sharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Plugins\Easy Save 2\Playmaker\ES2PlayMaker.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\AutoSave\ES2AutoSave.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\AutoSave\ES2AutoSaveGlobalManager.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\AutoSave\ES2AutoSaveManager.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Crossplatform\ES2DirectoryUtility.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Crossplatform\ES2Dispose.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Crossplatform\ES2FileUtility.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Crossplatform\ES2TypeUtility.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\ES2.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\ES2Auto.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\ES2Cache.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\ES2Data.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\ES2EditorWindowStyle.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\ES2File.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\ES2Reflection.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\ES2Spreadsheet.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\ES2Web.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\MoodkieSecurity\AESBits.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\MoodkieSecurity\AESEncryptor.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\MoodkieSecurity\AssemblyInfo.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\MoodkieSecurity\MD5.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\MoodkieSecurity\MD5Encryptor.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\MoodkieSecurity\Obfuscate.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Readers\ES2Header.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Readers\ES2Reader.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Settings\ES2FilenameData.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Settings\ES2GlobalSettings.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Settings\ES2Keys.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Settings\ES2Settings.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Streams\ES2FileStream.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Streams\ES2MemoryStream.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Streams\ES2PlayerPrefsStream.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Streams\ES2ResourcesStream.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Streams\ES2Stream.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_BoneWeight.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_Bounds.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_Color.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_Color32.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_DateTime.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_Enum.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_ES2AutoSaveManager.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_GameObject.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_Gradient.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_GradientAlphaKey.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_GradientColorKey.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_Material.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_Matrix4x4.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_Mesh.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_Quaternion.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_Rect.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_Sprite.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_Texture.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_Texture2D.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_Vector2.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_Vector3.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Basic Types\ES2_Vector4.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Components\ES2_BoxCollider.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Components\ES2_CapsuleCollider.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Components\ES2_MeshCollider.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Components\ES2_PolygonCollider2D.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Components\ES2_SkinnedMeshRenderer.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Components\ES2_SphereCollider.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Components\ES2_Transform.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\ES2Type.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\ES2TypeManager.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Primitives\ES2_bool.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Primitives\ES2_byte.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Primitives\ES2_char.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Primitives\ES2_decimal.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Primitives\ES2_double.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Primitives\ES2_float.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Primitives\ES2_int.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Primitives\ES2_long.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Primitives\ES2_object.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Primitives\ES2_sbyte.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Primitives\ES2_short.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Primitives\ES2_string.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Primitives\ES2_uint.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Primitives\ES2_ulong.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Types\Primitives\ES2_ushort.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Scripts\Writers\ES2Writer.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 2\Types\ES2_Sprite.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\PlayMaker\ES3PlayMaker.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Auto Save\ES3AutoSave.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Auto Save\ES3AutoSaveMgr.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Debugging\ES3Debug.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3Crypto.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3File.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3InspectorInfo.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3IO.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3Prefab.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3ReferenceMgr.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3ReferenceMgrBase.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3Reflection.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3SerializableDictionary.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\ES3Spreadsheet.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Readers\ES3JSONReader.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Readers\ES3Reader.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Settings\ES3DefaultSettings.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Settings\ES3Settings.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Streams\ES3FileStream.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Streams\ES3PlayerPrefsStream.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Streams\ES3ResourcesStream.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Streams\ES3Stream.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Collection Types\ES32DArrayType.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Collection Types\ES33DArrayType.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Collection Types\ES3ArrayType.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Collection Types\ES3CollectionType.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Collection Types\ES3DictionaryType.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Collection Types\ES3ListType.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Collection Types\ES3QueueType.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Collection Types\ES3StackType.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\ES3ComponentType.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\ES3ObjectType.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\ES3Property.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\ES3ScriptableObjectType.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\ES3Type.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\ES3TypeMgr.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\ES3UnityObjectType.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_bool.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_byte.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_byteArray.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_char.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_DateTime.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_decimal.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_double.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_enum.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_float.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_int.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_intptr.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_long.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_sbyte.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_short.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_string.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_uint.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_UIntPtr.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_ulong.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Primitive Types\ES3Type_ushort.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Reflected Types\ES3ReflectedComponentType.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Reflected Types\ES3ReflectedObjectType.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Reflected Types\ES3ReflectedScriptableObjectType.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Reflected Types\ES3ReflectedType.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Reflected Types\ES3ReflectedUnityObjectType.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Reflected Types\ES3ReflectedValueType.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_BoxCollider.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_BoxCollider2D.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_Camera.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_CapsuleCollider.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_EventSystem.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_MeshCollider.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_MeshFilter.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_MeshRenderer.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_ParticleSystem.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_PolygonCollider2D.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_SphereCollider.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_Text.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\Component Types\ES3Type_Transform.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_AnimationCurve.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_AudioClip.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_BoneWeight.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Bounds.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_CollisionModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Color.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Color32.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_ColorBySpeedModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_ColorOverLifetimeModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_EmissionModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_ExternalForcesModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Flare.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Font.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_ForceOverLifetimeModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_GameObject.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Gradient.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_GradientAlphaKey.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_GradientColorKey.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_InheritVelocityModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Keyframe.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_LayerMask.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Light.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_LightsModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_LimitVelocityOverLifetimeModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_MainModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Material.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Matrix4x4.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Mesh.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_MinMaxCurve.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_MinMaxGradient.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_NoiseModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_PhysicMaterial.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_PhysicsMaterial2D.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Quaternion.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Rect.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_RectTransform.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_RotationBySpeedModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_RotationOverLifetimeModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Shader.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_ShapeModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_SizeBySpeedModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_SizeOverLifetimeModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_SkinnedMeshRenderer.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Sprite.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_SpriteRenderer.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_SubEmittersModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Texture2D.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_TextureSheetAnimationModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_TrailModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_TriggerModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Vector2.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Vector3.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_Vector4.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Types\Unity Types\ES3Type_VelocityOverLifetimeModule.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Web\ES3Cloud.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Web\ES3WebClass.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Writers\ES3JSONWriter.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Writers\ES3Writer.cs" />
+    <Compile Include="Assets\Plugins\Easy Save 3\Scripts\Writers\ES3XMLWriter.cs" />
+    <Compile Include="Assets\Plugins\Vatio\Common\Scripts\Rotator.cs" />
+    <Compile Include="Assets\Plugins\Vatio\SideMenu\Examples\MainMenu\Scripts\MenuButtons.cs" />
+    <Compile Include="Assets\Plugins\Vatio\SideMenu\Examples\MultipleMenus\Scripts\CubeTransformer.cs" />
+    <Compile Include="Assets\Plugins\Vatio\SideMenu\Examples\Submenu\Scripts\Submenu.cs" />
+    <Compile Include="Assets\Plugins\Vatio\SideMenu\SideMenu.cs" />
+    <Compile Include="Assets\Plugins\WebSocket\WebSocket.cs" />
+    <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+    <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+    <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+    <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+    <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+    <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+    <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+    <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+    <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+    <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+    <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Easy DG\Core\Scripts\Plugins\Documentation\Plugin Changelog.txt" />
+    <None Include="Assets\Easy DG\Easy DG - Change Log.txt" />
+    <None Include="Assets\Easy Save 2\changelog.txt" />
+    <None Include="Assets\Easy Save 2\readme.txt" />
+    <None Include="Assets\Editor\Vuforia\Emulator\VuforiaEmulator.xml" />
+    <None Include="Assets\Photon Unity Networking\changelog.txt" />
+    <None Include="Assets\Photon Unity Networking\link.xml" />
+    <None Include="Assets\Photon Unity Networking\readme.txt" />
+    <None Include="Assets\Plugins\Easy Save 3\Editor\ES3ClassTypeTemplate.txt" />
+    <None Include="Assets\Plugins\Easy Save 3\Editor\ES3ComponentTypeTemplate.txt" />
+    <None Include="Assets\Plugins\Easy Save 3\Editor\ES3TypeTemplate.txt" />
+    <None Include="Assets\Plugins\Easy Save 3\Editor\ES3Type_MaterialTemplate.txt" />
+    <None Include="Assets\Plugins\Easy Save 3\Editor\ES3ValueTypeTemplate.txt" />
+    <None Include="Assets\Plugins\Easy Save 3\link.xml" />
+    <None Include="Assets\Plugins\Photon3Unity3D.xml" />
+    <None Include="Assets\Plugins\Vatio\About.txt" />
+    <None Include="Assets\Plugins\release_history.txt" />
+    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
+    <None Include="Assets\StreamingAssets\Vuforia\Tabletop_Nexus.xml" />
+    <None Include="Assets\UMA\Content\UMA_Contrib\Readme_Contrib.txt" />
+    <None Include="Assets\UMA\Content\UMA_Core\HumanShared\Materials\Shaders\HairFadeCutout.shader" />
+    <None Include="Assets\UMA\Content\UMA_Core\HumanShared\Materials\Shaders\HairFadeCutout2.shader" />
+    <None Include="Assets\UMA\Content\UMA_Core\HumanShared\Materials\Shaders\HairFadeCutoutSS.shader" />
+    <None Include="Assets\UMA\Core\Scripts\Editor\Templates\UmaDnaChild_Byte_Fields_Fragment.cs.txt" />
+    <None Include="Assets\UMA\Core\Scripts\Editor\Templates\UmaDnaChild_Byte_FromDna_Fragment.cs.txt" />
+    <None Include="Assets\UMA\Core\Scripts\Editor\Templates\UmaDnaChild_Byte_ToDna_Fragment.cs.txt" />
+    <None Include="Assets\UMA\Core\Scripts\Editor\Templates\UmaDnaChild_GetIndex_Fragment.cs.txt" />
+    <None Include="Assets\UMA\Core\Scripts\Editor\Templates\UmaDnaChild_GetNames_Fragment.cs.txt" />
+    <None Include="Assets\UMA\Core\Scripts\Editor\Templates\UmaDnaChild_GetValue_Fragment.cs.txt" />
+    <None Include="Assets\UMA\Core\Scripts\Editor\Templates\UmaDnaChild_SetIndex_Fragment.cs.txt" />
+    <None Include="Assets\UMA\Core\Scripts\Editor\Templates\UmaDnaChild_SetValue_Fragment.cs.txt" />
+    <None Include="Assets\UMA\Core\Scripts\Editor\Templates\UmaDnaChild_Template.cs.txt" />
+    <None Include="Assets\UMA\Core\Scripts\Editor\Templates\UmaDna_GetNames_Fragment.cs.txt" />
+    <None Include="Assets\UMA\Core\Scripts\Editor\Templates\UmaDna_GetType_Fragment.cs.txt" />
+    <None Include="Assets\UMA\Core\Scripts\Editor\Templates\UmaDna_GetTypes_Fragment.cs.txt" />
+    <None Include="Assets\UMA\Core\Scripts\Editor\Templates\UmaDna_Load_Fragment.cs.txt" />
+    <None Include="Assets\UMA\Core\Scripts\Editor\Templates\UmaDna_Save_Fragment.cs.txt" />
+    <None Include="Assets\UMA\Core\Scripts\Editor\Templates\UmaDna_Template.cs.txt" />
+    <None Include="Assets\UMA\Core\StandardAssets\UMA\Atlas\AtlasCutoutShader.shader" />
+    <None Include="Assets\UMA\Core\StandardAssets\UMA\Atlas\AtlasDiffuseShader.shader" />
+    <None Include="Assets\UMA\Core\StandardAssets\UMA\Atlas\AtlasNormalShader.shader" />
+    <None Include="Assets\UMA\Core\StandardAssets\UMA\Atlas\AtlasShader.shader" />
+    <None Include="Assets\UMA\Examples\Expressions Examples\Scenes\Editing Expression Clips.txt" />
+    <None Include="Assets\UMA\Examples\Extensions Examples\DynamicCharacterSystem\Assets\PhotoBooth\PhotoboothREADME.txt" />
+    <None Include="Assets\UMA\Examples\Main Examples\Assets\Fonts\Tuffy Font LICENSE.txt" />
+    <None Include="Assets\UMA\Examples\Main Examples\Assets\Shaders\Debug_Normals.shader" />
+    <None Include="Assets\UMA\Examples\Main Examples\Assets\Shaders\Debug_Tangents.shader" />
+    <None Include="Assets\UMA\Examples\Main Examples\Assets\Textures\Skyboxes\NoEmotion\NoEmotionHDRs.txt" />
+    <None Include="Assets\UMA\Examples\Main Examples\Scenes\ReadMe - Networking Demo.txt" />
+    <None Include="Assets\UMA\InternalDataStore\AssetVersion.xml" />
+    <None Include="Assets\UMA\InternalDataStore\InGame\Resources\PlaceholderAssets\PlaceholderAssetsREADME.txt" />
+    <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
+    <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
+    <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
+    <None Include="Assets\Vuforia\Shaders\DepthContour.shader" />
+    <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
+    <None Include="Assets\Vuforia\Shaders\OutlineOpaque.shader" />
+    <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
+    <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>

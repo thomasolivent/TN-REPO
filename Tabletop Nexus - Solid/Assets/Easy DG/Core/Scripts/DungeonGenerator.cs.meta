@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 51e741153f5d7854483f8e951cf81de5
+labels:
+- Dungeon
+- Generator
+- Level
+- Maze
+- Random
+timeCreated: 1495273482
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,44 @@
+Versioning based on submissions to store. Each time asset is resubmitted, will increase.
+- Minor updates will include minor bug fixes, quality of life improvements and interface changes.
+- Major updates will include new features, or major bug fixes / re-writes.
+
+CURRENT - V 1.1
+Support email: c00p.b.coding@gmail.com
+
+---------------------------------------------------------
+
+20/11/17 : 30/11/17 - V 1.1
+
+Core updates:
+
+ADDED - GetDungeonHeight() function to DungenGenerator.cs: Function to automatically calculate the height of a dungeon using the current prefabs. Floor height + tallest wall prefab height.
+ADDED - Framework in core generator script to support Plugins.
+UPDATED - Generator now runs using PluginCheck() function instead of GenDungeon(). Users can still call GenDungeon() and the EasyGen() function as normal, the absence of any plugins will not impact this or normal generator functions.
+
+ADDED - New spawning option 'boundaries', these allow you to limit the size of the dungeon to create more compact levels. See documentation and tooltips for further info.
+FIXED - A heap of bugs that resulted from this...
+
+Quality of Life improvements:
+
+ADDED - Easy setup wizard for creating the generator object and spawning dungeons. Can be accessed via menu: 'Easy DG | Easy DG Setup Wizard'.
+ADDED - Help URL to asset. Clicking the help icon now takes you to the Easy DG Help video on my YouTube channel.
+ADDED - Tooltips to Generator script.
+UPDATED - Documentation to reflect new setup wizard + new Plugin framework. Documentation for each plugin will be placed in a separate folder.
+FIXED - Positioning and height calculations for prefabs when generating dungeon. These were going a little wonky when using really small or large prefabs, should work better now.
+FIXED - Various typos and confusing comments in the documentation. Tried to make things generally more user friendly all round. (Cheers Thomas!)
+
+---------------------------------------------------------
+
+03/07/17 - V 1.0 - Minor Fix:
+
+FIXED - Coding error left over from testing prevented projects from building correctly.
+
+---------------------------------------------------------
+
+19/06/17 - 24/06/17 - V 1.0 - Changes from pre-release:
+
+FIXED - Coding error in door spawning would cause incorrect Y position for some door models.
+
+FIXED - Added a check to ensure that walls spawning either side of a door will only be of type 0 (i.e. in will only look like the door prefab assigned to the first element of the Door Prefabs array: doorPrefabs[0]). This check will find the neighbouring wall prefabs and update their model and material to match element 0.
+
+This is to ensure that the walls either side of a door won't be decorative and allows control over which type of wall will spawn next to a door simply by ensuring it's the first wall prefab in the array. Will expand on this in future updates, to allow multiple wall models/materials that can be spawned next to doors.

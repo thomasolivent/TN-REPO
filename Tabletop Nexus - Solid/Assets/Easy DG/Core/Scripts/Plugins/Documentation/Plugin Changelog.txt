@@ -1,0 +1,35 @@
+Plugin and pro features change log.
+For changes to the asset core, or free version, please see the changelog 
+under the main Easy DG asset folder.
+
+Support email: c00p.b.coding@gmail.com
+
+----------------------------------------------------------------------------
+
+Tower Mode Plugin - 28/11/17
+- Plugin Created.
+
+- Fixed issue with not correctly filling remaining tiles.
+
+Initial Features:
+- Fills gaps on each floor of the dungeon. With this on, gaps in the dungeon will have a floor tile placed that won't be counted for wall checks (works like a 'ceiling').
+- All floor tiles will also have a 'fillerTemplate' spawned over them, to give the appearance of solid walls.
+
+Multi-Story Plugin - 28/11/17
+- Fixed issue with hole spawning causing every second floor to not have a hole.
+
+----------------------------------------------------------------------------
+
+Multi-Story Plugin - 25/11/17:
+- Plugin created.
+
+Initial Features: 
+- Mutliple floors can be generated for a dungeon.
+- Certain tiles can be replaced with 'holes' (prefab for stairs / ladders / ramps - a way to move between floors), according to chosen options.
+
+Initial variables / controls:
+- totalFloors: how many floors to generate per dungeon.
+- maxHolesPerFloor: how many 'hole' tiles to generate per floor.
+- holeTilePrefab: prefab for the 'hole' tile.
+
+----------------------------------------------------------------------------

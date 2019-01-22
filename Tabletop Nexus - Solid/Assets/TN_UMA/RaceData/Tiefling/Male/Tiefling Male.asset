@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83d33591a744673429e1681df5574ac0, type: 3}
+  m_Name: Tiefling Male
+  m_EditorClassIdentifier: 
+  baseRaceRecipe: {fileID: 0}
+  wardrobeSlots:
+  - None
+  - Horns
+  - Face
+  - Hair
+  - Complexion
+  - Eyebrows
+  - Beard
+  - Ears
+  - Helmet
+  - Shoulders
+  - Chest
+  - Arms
+  - Hands
+  - Waist
+  - Legs
+  - Feet
+  backwardsCompatibleWith: []
+  _crossCompatibilitySettings:
+    settingsData: []
+  raceThumbnails:
+    fullThumb: {fileID: 0}
+    faceThumb: {fileID: 0}
+    wardrobeSlotThumbs: []
+  raceName: Tiefling Male
+  dnaConverterList: []
+  TPose: {fileID: 0}
+  umaTarget: 0
+  genericRootMotionTransformName: 
+  expressionSet: {fileID: 0}
+  dnaRanges: []
+  raceHeight: 2
+  raceRadius: 0.25
+  raceMass: 50
